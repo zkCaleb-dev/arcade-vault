@@ -1,6 +1,6 @@
 # SPEC 02 — Landing de inicio y traslado del catálogo a `/juegos`
 
-> **Estado:** Aprobado
+> **Estado:** Implementado
 > **Depende de:** SPEC 01
 > **Fecha:** 2026-08-28
 > **Objetivo:** Portar el landing de `references/templates/home-about/home.jsx` a la raíz `/` y mover el catálogo actual a `/juegos`, dejando el nav con Inicio · Juegos · Salón de la Fama.
