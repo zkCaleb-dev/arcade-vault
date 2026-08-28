@@ -99,8 +99,8 @@ export default function HallOfFame({ games }: { games: Game[] }) {
       </div>
 
       <div style={{ textAlign: "center", marginTop: 32 }}>
-        <Link className="btn lg" href="/">
-          VOLVER A LA BIBLIOTECA
+        <Link className="btn lg" href="/juegos">
+          VOLVER A LOS JUEGOS
         </Link>
       </div>
     </>

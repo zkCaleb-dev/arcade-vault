@@ -13,7 +13,7 @@ export default function AuthForm() {
 
   const submit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    router.push("/");
+    router.push("/juegos");
   };
 
   return (
@@ -74,7 +74,7 @@ export default function AuthForm() {
         </button>
       </form>
 
-      <Link className="btn ghost" href="/" style={{ width: "100%", marginTop: 10 }}>
+      <Link className="btn ghost" href="/juegos" style={{ width: "100%", marginTop: 10 }}>
         JUGAR COMO INVITADO
       </Link>
 
