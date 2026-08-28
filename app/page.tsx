@@ -1,17 +1,44 @@
-import LibraryBrowser from "@/components/library-browser";
-import { CATS, GAMES } from "@/lib/games";
+import Link from "next/link";
+import HomeActivity from "@/components/home-activity";
+import HomeFeatures from "@/components/home-features";
+import HomeHero from "@/components/home-hero";
+import HomePricing from "@/components/home-pricing";
+import HomeRail from "@/components/home-rail";
+import HomeStats from "@/components/home-stats";
+import Reveal from "@/components/reveal";
 
 export default function Home() {
   return (
-    <div className="fade-in">
-      <section className="av-hero">
-        <h1 className="flicker">ARCADE VAULT</h1>
-        <div className="sub">
-          INSERTA UNA MONEDA PARA JUGAR <span className="blink">_</span>
-        </div>
-      </section>
+    <div className="home fade-in">
+      <HomeHero />
 
-      <LibraryBrowser games={GAMES} cats={CATS} />
+      <Reveal className="home-section">
+        <HomeFeatures />
+      </Reveal>
+
+      <Reveal className="home-section">
+        <HomeRail />
+      </Reveal>
+
+      <Reveal className="home-stats">
+        <HomeStats />
+      </Reveal>
+
+      <Reveal className="home-section">
+        <HomeActivity />
+      </Reveal>
+
+      <Reveal className="home-section">
+        <HomePricing />
+      </Reveal>
+
+      <Reveal className="home-final">
+        <h2 className="final-title pixel">¿LISTO PARA JUGAR?</h2>
+        <Link className="btn xl pulse final-cta" href="/juegos">
+          INSERTAR MONEDA →
+        </Link>
+        <div className="final-tag">Gratis. Sin registro obligatorio. Empieza en segundos.</div>
+      </Reveal>
     </div>
   );
 }
