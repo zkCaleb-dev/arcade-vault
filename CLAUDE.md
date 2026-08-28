@@ -13,6 +13,10 @@ is still to be designed.
 
 Product docs and issue discussion are in Spanish; code and identifiers in English.
 
+## Skills
+Usan siempre /frontend-design para disenar la interfaz de usuario.
+
+
 ## Commands
 
 ```bash
