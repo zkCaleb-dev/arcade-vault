@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Plantillas HTML/JSX de referencia, no forman parte del build.
+    "references/**",
   ]),
 ]);
 
