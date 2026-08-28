@@ -31,6 +31,7 @@ export default function LibraryBrowser({
             value={q}
             onChange={(e) => setQ(e.target.value)}
             placeholder="Buscar un juego por nombre…"
+            style={{ padding: "1px 2px" }}
           />
         </div>
         <div className="av-chips">
